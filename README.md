@@ -1,8 +1,18 @@
-# React + Vite
+# atividade---FRONTEND---listagem-de-filmes---Escola-DNC
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Sobre o projeto
+Essa atividade trata-se de uma aplicação que mostra, pesquisa, lista e fornece detalhes sobre filmes usando a base de dados do themoviedb API.
 
-Currently, two official plugins are available:
+Projeto hospedado em: 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Comandos para rodar o projeto
+
+```bash
+  npm i
+```
+```bash
+  npm run dev
+```
+
+## Screenshots
+![App Screenshot](/public/picture_01.png)

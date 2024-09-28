@@ -1,13 +1,13 @@
 import { Link, useParams } from "react-router-dom";
 import "./index.scss"
 import { useEffect, useState } from "react";
-import { MovieService } from "../../data/MovieService";
+import { MovieService } from "../../services/MovieService";
 
 const MovieDetail = () => {
   const { id } = useParams()
   const [movie, setMovie] = useState({})
 
-  async function getMovie(){
+  async function getMovie() {
     const { data } = await MovieService.getMovieDetails(id)
     setMovie(data)
   }
@@ -15,12 +15,10 @@ const MovieDetail = () => {
   useEffect(() => {
     getMovie()
   }, [])
-  
 
   useEffect(() => {
     console.log(movie)
   })
-  
 
   return (
     <section className="MovieDetail">
@@ -58,4 +56,4 @@ const MovieDetail = () => {
   );
 };
 
-export default MovieDetail
+export default MovieDetail;

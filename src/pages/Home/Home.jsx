@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import "./index.scss"
-import { MovieService } from "../../data/MovieService"
+import { MovieService } from "../../services/MovieService"
 import MovieCard from "../../components/MovieCard/MovieCard"
 
 const Home = ({ searchValueProp }) => {
@@ -14,9 +14,9 @@ const Home = ({ searchValueProp }) => {
     setMovies(results)
   }
 
-  async function getMovieSearch(movieString){
+  async function getMovieSearch(movieString) {
     const {
-      data: {results},
+      data: { results },
     } = await MovieService.searchMovies(movieString);
 
     setMovies(results)
@@ -34,18 +34,16 @@ const Home = ({ searchValueProp }) => {
       getMovies()
     }
   }, [searchValueProp])
-  
-  
 
   return (
     <section className="Home">
       {movies.map((movie) => (
         <div key={movie.id}>
-          <MovieCard movieProp={movie}/>
+          <MovieCard movieProp={movie} />
         </div>
-        ))}
+      ))}
     </section>
   )
 }
 
-export default Home
+export default Home;

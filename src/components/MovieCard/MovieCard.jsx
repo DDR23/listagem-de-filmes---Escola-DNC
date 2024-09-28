@@ -20,4 +20,4 @@ const MovieCard = ({ movieProp }) => {
   )
 }
 
-export default MovieCard
+export default MovieCard;
