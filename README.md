@@ -1,4 +1,4 @@
-# atividade---FRONTEND---listagem-de-filmes---Escola-DNC
+# listagem-de-filmes-themoviedb-frontend
 
 ## Sobre o projeto
 Essa atividade trata-se de uma aplicação que mostra, pesquisa, lista e fornece detalhes sobre filmes usando a base de dados do themoviedb API.
